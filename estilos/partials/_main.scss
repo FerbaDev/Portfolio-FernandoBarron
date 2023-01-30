@@ -1,8 +1,55 @@
-.saludo {
-    display: flex;
-    justify-content: flex-start;
+.typer {
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid azure;
+    width: 11ch;
+    padding-block: 20px;
 
-    h1 {
-        flex-grow: 0;
+    animation: typing 2s steps(11), blink .5s step-end infinite alternate;
+    overflow: hidden;
+    
+}
+
+@keyframes typing {
+    from {width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent;}
+    
+}
+
+.name-pic {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px 0;
+
+    img {
+        width: 90%;
+    }
+}
+
+.extra {
+    margin-block: 20px;
+}
+
+.mas-info {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border: 4px solid azure;
+    width: fit-content;
+
+    p{
+        width: fit-content;
+    }
+    div {
+        width: fit-content;
+
+        button {
+            padding: 5px;
+            border: 2px solid azure;
+        }
     }
 }

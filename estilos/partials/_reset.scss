@@ -6,23 +6,3 @@
     color: azure;
     font-family: $fuentePrincipal;
 }
-.typewriter {
-    overflow: hidden;
-    border-right: .15em solid azure;
-    white-space: nowrap;
-    margin: 0 auto;
-    animation: 
-        typing 3.5s steps(30, end),
-        blink-caret .5s step-end infinite;
-}
-/* efecto tipeo */
-@keyframes typing {
-    from { width: 0 }
-    to { width: 100% }
-}
-
-  /* efecto del cursor */
-@keyframes blink-caret {
-    from, to { border-color: transparent }
-    50% { border-color: azure }
-}
