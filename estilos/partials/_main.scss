@@ -1,0 +1,8 @@
+.saludo {
+    display: flex;
+    justify-content: flex-start;
+
+    h1 {
+        flex-grow: 0;
+    }
+}
