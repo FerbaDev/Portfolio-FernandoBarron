@@ -50,6 +50,9 @@ body {
   align-items: flex-start;
   margin: 20px 0;
 }
+.name-pic .name {
+  font-size: 1.5em;
+}
 .name-pic img {
   width: 90%;
 }
@@ -82,4 +85,10 @@ body {
 .mas-info div button {
   padding: 5px;
   border: 2px solid azure;
+}
+
+@media screen and (min-width: 991px) {
+  .name-pic img {
+    width: 50%;
+  }
 }/*# sourceMappingURL=style.css.map */

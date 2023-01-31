@@ -25,10 +25,15 @@
     align-items: flex-start;
     margin: 20px 0;
 
+    .name {
+        font-size: 1.5em;
+    }
+
     img {
         width: 90%;
     }
 }
+
 
 .extra {
     margin-block: 20px;
@@ -53,6 +58,14 @@
         button {
             padding: 5px;
             border: 2px solid azure;
+        }
+    }
+}
+@media screen and (min-width: 991px) {
+    .name-pic {
+
+        img {
+            width: 50%;
         }
     }
 }
