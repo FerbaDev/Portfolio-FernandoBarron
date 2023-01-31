@@ -49,20 +49,24 @@
 
     animation: blink .5s step-end infinite alternate;
     
-    @keyframes blink {
-        50% { border-color: transparent;}
-    }
-    p{
-        width: fit-content;
-    }
-    div {
-        width: fit-content;
-
-        button {
-            padding: 5px;
-            border: 2px solid azure;
+    
+        p{
+            width: fit-content;
         }
-    }
+        .info-botones {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            width: fit-content;
+
+            button {
+                padding: 5px;
+                border: 2px solid azure;
+            }
+        }
+}
+@keyframes blink {
+    50% { border-color: transparent;}
 }
 @media screen and (min-width: 991px) {
     .name-pic {

@@ -74,26 +74,29 @@ body {
   -webkit-animation: blink 0.5s step-end infinite alternate;
           animation: blink 0.5s step-end infinite alternate;
 }
-@keyframes blink {
-  50% {
-    border-color: transparent;
-  }
-}
 .mas-info p {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.mas-info div {
+.mas-info .info-botones {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
-.mas-info div button {
+.mas-info .info-botones button {
   padding: 5px;
   border: 2px solid azure;
 }
 
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
 @media screen and (min-width: 991px) {
   .name-pic img {
     width: 50%;
