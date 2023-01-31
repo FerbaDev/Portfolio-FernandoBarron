@@ -22,7 +22,7 @@
 .name-pic {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     margin: 20px 0;
 
     img {
@@ -40,6 +40,9 @@
     padding: 30px;
     border: 4px solid azure;
     width: fit-content;
+    margin-inline: 20px;
+    margin-bottom: 20px;
+    
 
     p{
         width: fit-content;
