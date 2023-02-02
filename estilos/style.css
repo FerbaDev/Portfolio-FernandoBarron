@@ -12,14 +12,19 @@ body {
   background-color: #212529;
 }
 
+.navbar {
+  background-color: #c111fb !important;
+}
+
 .typer {
   display: block;
   white-space: nowrap;
   border-right: 4px solid azure;
-  width: 11ch;
+  width: 12ch;
   padding-block: 20px;
-  -webkit-animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
-          animation: typing 2s steps(11), blink 0.5s step-end infinite alternate;
+  font-size: 2em;
+  -webkit-animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
+          animation: typing 2s steps(12), blink 0.5s step-end infinite alternate;
   overflow: hidden;
 }
 
@@ -48,7 +53,9 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin: 20px 0;
+  margin: 20px;
+  border: 2px solid azure;
+  padding: 10px;
 }
 .name-pic .name {
   font-size: 1.5em;
@@ -98,7 +105,22 @@ body {
   }
 }
 @media screen and (min-width: 991px) {
+  .name-pic {
+    width: 50%;
+  }
   .name-pic img {
     width: 50%;
   }
+}
+.estudio {
+  background-color: #c111fb;
+}
+.estudio span {
+  background-color: #c111fb;
+}
+.estudio ul {
+  background-color: #c111fb;
+}
+.estudio ul li {
+  background-color: #c111fb;
 }/*# sourceMappingURL=style.css.map */
