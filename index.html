@@ -6,78 +6,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV - FerBarron</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="./estilos/style.css">
 </head>
 <body>
     <!-- navbar -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" data-bs-theme="dark">
-        <div class="container-fluid justify-content-between">
-            <a class="navbar-brand" href="#">FerbaDev</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"      data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"     aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+    <div class="navbar">
+        <a href="#home">FerbaDev</a>
+        <div class="dropdown">
+            <button class="dropbtn">Menú
+                <i class="fa fa-caret-down"></i>
             </button>
-            <div class="collapse navbar-collapse flex-grow-0" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                    <li class="nav-item text-end">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item text-end">
-                        <a class="nav-link" href="#">Sobre mi</a>
-                    </li>
-                    <li class="nav-item text-end dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Experiencia
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item text-end" href="#">Experiencia académica</a></li>
-                            <li><a class="dropdown-item text-end disabled" href="#">Experiencia laboral</a></li>
-                            <li><a class="dropdown-item text-end disabled" href="#">Something else here</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item text-end">
-                        <a class="nav-link disabled" href="#">Pricing</a>
-                    </li>
-                </ul>
+            <div class="dropdown-content">
+                <a href="#">Link 1</a>
+                <a href="#">Link 2</a>
+                <a href="#">Link 3</a>
             </div>
         </div>
-    </nav>
+    </div>
+    <hr>
     <!-- cierra navbar -->
     <!-- empieza main -->
     <main>
-        <div class="container-fluid">
-            <span class="typer">Hola mundo!</span>
-        </div>
-        <div class="container name-pic">
+        <h1>Hola Mundo!</h1>
+        <div class="name-pic">
             <span class="name">- Mi nombre es: Fernando Barron.</span>
             <img src="./imagenes/avatar.jpg" alt="avatar">
         </div>
-        <div class="container-fluid extra">
-            <p>- Estoy estudiando desarrollo web y programación.</p>
+        <div class="extra">
+            <p>- Soy desarrollador web y estudiante de programación.</p>
             <p>- Mis intereses están relacionados a las nuevas tecnologías, la web3, criptomonedas, DeFi...</p>
-            <p>- También soy fan de la botánica! Amo las plantas en general pero particularmente prefiero los cactus y las plantas nativas.</p>
+            <p>- También soy fan de la botánica! Amo los cactus y las plantas nativas.</p>
         </div>
-        <div class="container mas-info">
+        <div class="mas-info">
             <p>¿Más info?</p>
             <div class="info-botones">
                 <button>Cancelar</button>
                 <button>Continuar</button>
             </div>
         </div>
-        <div class="container  col-xs-10 col-sm-8 col-md-6 col-lg-4 estudio m-2">
-            <span>Estoy estudiando:</span>
-            <ul>
-                <li>HTML5</li>
-                <li>Accesibilidad</li>
-                <li>CSS3</li>
-                <li>Flex-box</li>
-                <li>Grids</li>
-                <li>Bootstrap</li>
-                <li>JavaScript</li>
-                <li>Responsive design</li>
-                <li>SEO</li>
-            </ul>
-
+        <div class="estudios">
+            <fieldset class="fieldset">
+                <legend class="legend">Mis conocimientos:</legend>
+                    <ul class="lista-estudios">
+                        <li>HTML5</li>
+                        <li>CSS3</li>
+                        <li>Flex-box</li>
+                        <li>Grids</li>
+                        <li>Bootstrap</li>
+                        <li>JavaScript</li>
+                        <li>Responsive design</li>
+                        <li>Accesibilidad</li>
+                        <li>SEO</li>
+                    </ul>
+            </fieldset>
         </div>
 
     </main>
@@ -86,6 +67,6 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+    
 </body>
 </html>
