@@ -179,6 +179,11 @@ h1 {
 }
 
 /* cierra cartel de estudios */
+@media screen and (max-width: 768px) {
+  .estudios {
+    width: 90%;
+  }
+}
 @media screen and (min-width: 991px) {
   .name-pic {
     width: 50%;

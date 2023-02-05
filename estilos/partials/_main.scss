@@ -6,24 +6,24 @@
     flex-direction: row;
     justify-content: space-between;
     margin-inline: 20px;
-  }
-  
+}
+
   /* Links inside the navbar */
-  .navbar a {
+.navbar a {
     font-size: 16px;
     color: hotpink;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-  }
+}
   
   /* The dropdown container */
-  .dropdown {
+.dropdown {
     overflow: hidden;
-  }
-  
+}
+
   /* Dropdown button */
-  .dropdown .dropbtn {
+.dropdown .dropbtn {
     font-size: 16px;
     border: none;
     outline: none;
@@ -32,42 +32,42 @@
     background-color: inherit;
     font-family: inherit; /* Important for vertical align on mobile phones */
     margin: 0; /* Important for vertical align on mobile phones */
-  }
-  
+}
+
   /* Add a red background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover, .dropdown:hover .dropbtn {
     color: deeppink;
-  }
-  
+}
+
   /* Dropdown content (hidden by default) */
-  .dropdown-content {
+.dropdown-content {
     display: none;
     position: absolute;
     min-width: 160px;
     border: 1px solid azure;
     z-index: 1;
     margin-right: 20px;
-  }
-  
+}
+
   /* Links inside the dropdown */
-  .dropdown-content a {
+.dropdown-content a {
     float: none;
     color: hotpink;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
-  }
-  
+}
+
   /* Add a grey background color to dropdown links on hover */
-  .dropdown-content a:hover {
+.dropdown-content a:hover {
     background-color: rgb(255, 255, 255);
-  }
-  
+}
+
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 /* cierra navbar  */
 
 h1 {
@@ -158,16 +158,3 @@ h1 {
 
 /* cierra cartel de estudios */
 
-
-
-
-
-@media screen and (min-width: 991px) {
-    .name-pic {
-        width: 50%;
-
-        img {
-            width: 50%;
-        }
-    }
-}
