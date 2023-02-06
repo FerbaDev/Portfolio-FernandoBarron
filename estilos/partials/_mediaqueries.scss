@@ -1,4 +1,13 @@
 @media screen and (max-width: 768px) {
+    
+    .name-pic {
+        width: 70%;
+
+        img {
+            width: 90%;
+        }
+    }
+    
     .estudios {
         width: 90%;
     }
@@ -7,6 +16,16 @@
 @media screen and (min-width: 991px) {
     .name-pic {
         width: 50%;
+
+        img {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .name-pic {
+        width: 90%;
+        border: none;
 
         img {
             width: 50%;
