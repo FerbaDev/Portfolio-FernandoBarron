@@ -204,7 +204,6 @@ h1 {
 @media screen and (max-width: 480px) {
   .name-pic {
     width: 90%;
-    border: none;
   }
   .name-pic img {
     width: 50%;
