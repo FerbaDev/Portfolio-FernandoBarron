@@ -112,6 +112,7 @@ h1 {
 .extra p {
   margin-bottom: 15px;
   text-align: start;
+  line-height: 1.2em;
 }
 
 /*empieza banner mas info*/
@@ -207,5 +208,8 @@ h1 {
   }
   .name-pic img {
     width: 50%;
+  }
+  .extra {
+    width: 90%;
   }
 }/*# sourceMappingURL=style.css.map */
