@@ -206,17 +206,17 @@ h1 {
   background-color: red;
   border: 1px solid azure;
 }
-.aestudiar .fieldset-Aest {
+.aestudiar .fieldset-aest {
   background-color: red;
 }
-.aestudiar .fieldset-Aest .legend-Aest {
+.aestudiar .fieldset-aest .legend-aest {
   background-color: red;
 }
-.aestudiar .fieldset-Aest ul {
+.aestudiar .fieldset-aest .lista-aestudios {
   padding: 20px;
   background-color: red;
 }
-.aestudiar .fieldset-Aest ul li {
+.aestudiar .fieldset-aest .lista-aestudios li {
   background-color: red;
   padding-block: 5px;
 }
