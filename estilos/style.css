@@ -107,7 +107,7 @@ h1 {
 /* parrafos extras*/
 .extra {
   margin: 20px;
-  width: 70%;
+  width: 75%;
 }
 .extra p {
   margin-bottom: 15px;
@@ -121,17 +121,14 @@ h1 {
   flex-direction: column;
   padding: 30px;
   border: 3px solid azure;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
   margin-inline: 20px;
   margin-bottom: 20px;
   gap: 1em;
-  -webkit-animation: blink 0.5s step-end infinite alternate;
-          animation: blink 0.5s step-end infinite alternate;
+  animation: blink 0.5s step-end infinite alternate;
 }
 .mas-info p {
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
@@ -139,19 +136,12 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 .mas-info .info-botones button {
   padding: 5px;
   border: 2px solid azure;
-}
-
-@-webkit-keyframes blink {
-  50% {
-    border-color: transparent;
-  }
 }
 
 @keyframes blink {
@@ -180,9 +170,57 @@ h1 {
 }
 .estudios .fieldset ul li {
   background-color: blue;
+  padding-block: 5px;
 }
 
 /* cierra cartel de estudios */
+/* cartel de estudiando*/
+.estudiando {
+  width: 50%;
+  margin: 30px;
+  padding: 30px;
+  background-color: dimGray;
+  border: 1px solid azure;
+}
+.estudiando .fieldset-est {
+  background-color: dimGray;
+}
+.estudiando .fieldset-est .legend-est {
+  background-color: dimGray;
+}
+.estudiando .fieldset-est ul {
+  padding: 20px;
+  background-color: dimGray;
+}
+.estudiando .fieldset-est ul li {
+  background-color: dimGray;
+  padding-block: 5px;
+}
+
+/* cierra cartel estudiando*/
+/* cartel de proximo a estudiar*/
+.aestudiar {
+  width: 50%;
+  margin: 30px;
+  padding: 30px;
+  background-color: red;
+  border: 1px solid azure;
+}
+.aestudiar .fieldset-Aest {
+  background-color: red;
+}
+.aestudiar .fieldset-Aest .legend-Aest {
+  background-color: red;
+}
+.aestudiar .fieldset-Aest ul {
+  padding: 20px;
+  background-color: red;
+}
+.aestudiar .fieldset-Aest ul li {
+  background-color: red;
+  padding-block: 5px;
+}
+
 @media screen and (max-width: 768px) {
   .name-pic {
     width: 70%;
@@ -191,7 +229,13 @@ h1 {
     width: 90%;
   }
   .estudios {
-    width: 90%;
+    width: 85%;
+  }
+  .estudiando {
+    width: 85%;
+  }
+  .aestudiar {
+    width: 85%;
   }
 }
 @media screen and (min-width: 991px) {

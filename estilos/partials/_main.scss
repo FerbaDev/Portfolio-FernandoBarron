@@ -96,7 +96,7 @@ h1 {
 /* parrafos extras*/
 .extra {
     margin: 20px;
-    width: 70%;
+    width: 75%;
 
     p {
         margin-bottom: 15px;
@@ -156,10 +156,59 @@ h1 {
 
             li{
                 background-color: blue;
+                padding-block: 5px;
             }
         }
     }
 }
 
 /* cierra cartel de estudios */
+/* cartel de estudiando*/
+.estudiando {
+    width: 50%;
+    margin: 30px;
+    padding: 30px;
+    background-color: $estudiando;
+    border: 1px solid azure;
 
+    .fieldset-est {
+        background-color: $estudiando;
+        .legend-est {
+            background-color: $estudiando;
+        }
+        ul {
+            padding: 20px;
+            background-color: $estudiando;
+
+            li{
+                background-color: $estudiando;
+                padding-block: 5px;
+            }
+        }
+    }
+}
+/* cierra cartel estudiando*/
+/* cartel de proximo a estudiar*/
+.aestudiar {
+    width: 50%;
+    margin: 30px;
+    padding: 30px;
+    background-color: $aestudiar;
+    border: 1px solid azure;
+
+    .fieldset-Aest {
+        background-color: $aestudiar;
+        .legend-Aest {
+            background-color: $aestudiar;
+        }
+        ul {
+            padding: 20px;
+            background-color: $aestudiar;
+
+            li{
+                background-color: $aestudiar;
+                padding-block: 5px;
+            }
+        }
+    }
+}
