@@ -239,6 +239,7 @@ h1 {
   animation: fondocolores 20s infinite alternate;
 }
 .contacto .contacto-items a {
+  font-size: 1.5em;
   animation: fondocolores 20s infinite alternate;
 }
 .contacto .contacto-items a i {
