@@ -212,3 +212,50 @@ h1 {
         }
     }
 }
+.contacto {
+    height: 10em;
+    background-color: deeppink;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    animation: fondocolores 20s infinite alternate;
+
+    .contacto-tit {
+        animation: fondocolores 20s infinite alternate;
+    }
+    .contacto-items {
+        animation: fondocolores 20s infinite alternate;
+        a {
+            animation: fondocolores 20s infinite alternate;
+            i {
+                animation: fondocolores 20s infinite alternate;
+            }
+        }
+    }
+}
+@keyframes fondocolores {
+    0% {
+        background-color: blueviolet;
+    }
+    16% {
+        background-color: darkorchid;
+    }
+    32% {
+        background-color: deeppink;
+    }
+    48% {
+        background-color: fuchsia;
+    }
+    64% {
+        background-color: hotpink;
+    }
+    82% {
+        background-color: indigo;
+    }
+    100% {
+        background-color: mediumblue;
+    }
+}

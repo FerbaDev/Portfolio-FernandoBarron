@@ -221,6 +221,53 @@ h1 {
   padding-block: 5px;
 }
 
+.contacto {
+  height: 10em;
+  background-color: deeppink;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  animation: fondocolores 20s infinite alternate;
+}
+.contacto .contacto-tit {
+  animation: fondocolores 20s infinite alternate;
+}
+.contacto .contacto-items {
+  animation: fondocolores 20s infinite alternate;
+}
+.contacto .contacto-items a {
+  animation: fondocolores 20s infinite alternate;
+}
+.contacto .contacto-items a i {
+  animation: fondocolores 20s infinite alternate;
+}
+
+@keyframes fondocolores {
+  0% {
+    background-color: blueviolet;
+  }
+  16% {
+    background-color: darkorchid;
+  }
+  32% {
+    background-color: deeppink;
+  }
+  48% {
+    background-color: fuchsia;
+  }
+  64% {
+    background-color: hotpink;
+  }
+  82% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: mediumblue;
+  }
+}
 @media screen and (max-width: 768px) {
   .name-pic {
     width: 70%;
