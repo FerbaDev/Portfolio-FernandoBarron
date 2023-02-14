@@ -179,21 +179,21 @@ h1 {
   width: 50%;
   margin: 30px;
   padding: 30px;
-  background-color: dimGray;
+  background-color: green;
   border: 1px solid azure;
 }
 .estudiando .fieldset-est {
-  background-color: dimGray;
+  background-color: green;
 }
 .estudiando .fieldset-est .legend-est {
-  background-color: dimGray;
+  background-color: green;
 }
 .estudiando .fieldset-est ul {
   padding: 20px;
-  background-color: dimGray;
+  background-color: green;
 }
 .estudiando .fieldset-est ul li {
-  background-color: dimGray;
+  background-color: green;
   padding-block: 5px;
 }
 
