@@ -1,5 +1,5 @@
 @media screen and (max-width: 768px) {
-    
+
     .name-pic {
         width: 70%;
 
@@ -20,15 +20,18 @@
 }
 
 @media screen and (min-width: 991px) {
+
     .name-pic {
-        width: 50%;
+        width: 28%;
 
         img {
-            width: 50%;
+            width: 100%;
+            
         }
     }
 }
 @media screen and (max-width: 480px) {
+
     .name-pic {
         width: 90%;
         
