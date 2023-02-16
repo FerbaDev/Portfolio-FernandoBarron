@@ -28,29 +28,31 @@
     <!-- empieza main -->
     <main>
         <div class="bannersaludo">
-            <h1 id="holamundo"></h1>
+            <h1>Hola mundo!</h1>
         </div>
-        <div class="presentacion">
-            <div class="name-pic">
-                <span class="name">Fer Barron.</span>
-                <img src="./imagenes/avatar.jpg" alt="avatar">
+        <div class="contenido">
+            <div class="presentacion">
+                <div class="name-pic">
+                    <span class="name">Soy Fernando Barron.</span>
+                    <img src="./imagenes/avatar.jpg" alt="avatar">
+                </div>
             </div>
-            <div class="extra">
-                <p>- Soy desarrollador web y estudiante de programación. Aspirante a Full Stack Dev.</p>
-                <p>- Mi objetivo profesional es desarrollar mi carrera en una organización que me permita profundizar mis habilidades y comocimientos.</p>
-                <p>- Experiencia laboral administrativa, gestión, capacitación y emprendimientos personales, inversiones, redes sociales.</p>
-                <p>- Disfruto trabajar en equipo y por objetivos.</p>
-                <p>- Soy resolutivo, propositivo, proactivo y optimista. Aprendo rápido lo que no sé.</p>
-                <p>- I have a good english level.</p>
+            <div class="principal">
+                <div class="mas-info">
+                    <p>¿Más info?</p>
+                    <div class="info-botones">
+                        <button id="info-cancelar" onclick="continuarno()">Cancelar</button>
+                        <button id="info-continuar" onclick="continuarsi()">Continuar</button>
+                    </div>
+                    <p id="id-info"></p>
+                </div>
             </div>
         </div>
-        
-        <div class="mas-info">
-            <p id="id-info">¿Más info?</p>
-            <div class="info-botones">
-                <button id="info-cancelar" onclick="continuarno()">Cancelar</button>
-                <button id="info-continuar" onclick="continuarsi()">Continuar</button>
-            </div>
+        <div class="extra">
+            <p>- Soy desarrollador web y estudiante de programación Front End. Aspirante a Full Stack Dev.</p>
+            <p>- Mi objetivo profesional es desarrollar mi carrera en una organización que me permita profundizar mis habilidades y comocimientos.</p>
+            <p>- Experiencia laboral administrativa, gestión, capacitación y emprendimientos personales, inversiones, redes sociales.</p>
+            <p>- I have a good english level.</p>
         </div>
         <div class="estudios">
             <fieldset class="fieldset">
@@ -97,18 +99,15 @@
                     </ul>
             </fieldset>
         </div>
-        <div class="contacto">
-            <span class="contacto-tit">Contacto:</span>
-            <div class="contacto-items">
-                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-                <a href=""><i class="fa-regular fa-envelope"></i></a>
-                <a href=""><i class="fa-brands fa-github"></i></a>
-                <a href=""><i class="fa-brands fa-linkedin"></i></a>
-            </div>
-        </div>
     </main>
-    <footer>
-        
+    <footer class="contacto">
+        <span class="contacto-tit">Contacto:</span>
+        <div class="contacto-items">
+            <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+            <a href=""><i class="fa-regular fa-envelope"></i></a>
+            <a href=""><i class="fa-brands fa-github"></i></a>
+            <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
     </footer>
 
 
