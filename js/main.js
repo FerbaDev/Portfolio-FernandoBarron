@@ -19,19 +19,6 @@ document.getElementById("masInfo").style.border = borde;
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 //empieza funcion de mas info
 const continuar1 = "Soy Front End Developer" 
 
