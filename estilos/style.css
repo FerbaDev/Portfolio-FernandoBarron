@@ -159,8 +159,11 @@
   width: fit-content;
 }
 .mas-info .info-botones button {
-  padding: 5px;
-  border: 2px solid azure;
+  padding: 7px;
+  border: 2px solid #212529;
+}
+.mas-info .info-botones button:hover {
+  background-color: mediumvioletred;
 }
 
 @keyframes blink {
@@ -187,6 +190,7 @@
   padding: 30px;
   background-color: green;
   border: 1px solid azure;
+  color: azure;
 }
 .estudios .fieldset {
   background-color: green;
@@ -211,6 +215,7 @@
   padding: 30px;
   background-color: blue;
   border: 1px solid azure;
+  color: azure;
 }
 .estudiando .fieldset-est {
   background-color: blue;
@@ -235,6 +240,7 @@
   padding: 30px;
   background-color: red;
   border: 1px solid azure;
+  color: azure;
 }
 .aestudiar .fieldset-aest {
   background-color: red;
@@ -271,6 +277,7 @@
 .contacto .contacto-items a {
   font-size: 1.5em;
   animation: fondocolores 20s infinite alternate;
+  color: azure;
 }
 .contacto .contacto-items a i {
   animation: fondocolores 20s infinite alternate;

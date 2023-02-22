@@ -5,13 +5,16 @@ function selectMode (mode) {
     if (mode === "dark") {
         bgcolor = "#212529"
         color = "azure"
+        borde = "3px solid azure"
     } else {
         bgcolor = "ghostWhite"
         color = "#212529"
+        borde = "3px solid #212529"
     }
 
 document.getElementById("theme").style.backgroundColor = bgcolor;
 document.getElementById("theme").style.color = color;
+document.getElementById("masInfo").style.border = borde;
 
 }
 

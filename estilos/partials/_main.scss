@@ -165,8 +165,11 @@
             width: fit-content;
 
             button {
-                padding: 5px;
-                border: 2px solid azure;
+                padding: 7px;
+                border: 2px solid #212529;
+                &:hover {
+                    background-color: mediumvioletred;
+                }
             }
         }
 }
@@ -193,6 +196,7 @@
     padding: 30px;
     background-color: $conocimientos;
     border: 1px solid azure;
+    color: azure;
 
     .fieldset {
         background-color: $conocimientos;
@@ -219,6 +223,7 @@
     padding: 30px;
     background-color: $estudiando;
     border: 1px solid azure;
+    color: azure;
 
     .fieldset-est {
         background-color: $estudiando;
@@ -244,6 +249,7 @@
     padding: 30px;
     background-color: $aestudiar;
     border: 1px solid azure;
+    color: azure;
 
     .fieldset-aest {
         background-color: $aestudiar;
@@ -277,9 +283,11 @@
     }
     .contacto-items {
         animation: fondocolores 20s infinite alternate;
+        
         a {
             font-size: 1.5em;
             animation: fondocolores 20s infinite alternate;
+            color: azure;
             i {
                 animation: fondocolores 20s infinite alternate;
             }
