@@ -90,6 +90,27 @@
 //empieza el cartel de saludo
 .bannersaludo {
     margin: 32px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .modos {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        margin-right: 1em;
+
+        button {
+            padding: 5px;
+            border-left: 1px solid gray;
+            border-top: 1px solid gray;
+
+            &:hover {
+                background-color: hotpink;
+            }
+        }
+
+    }
 }
 
 

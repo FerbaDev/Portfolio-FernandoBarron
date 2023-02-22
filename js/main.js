@@ -1,3 +1,31 @@
+// modo claro/oscuro
+function selectMode (mode) {
+
+
+    if (mode === "dark") {
+        bgcolor = "#212529"
+        color = "azure"
+    } else {
+        bgcolor = "ghostWhite"
+        color = "#212529"
+    }
+
+document.getElementById("theme").style.backgroundColor = bgcolor;
+document.getElementById("theme").style.color = color;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
