@@ -100,13 +100,19 @@
   gap: 0.5em;
   margin-right: 1em;
 }
-.bannersaludo .modos button {
-  padding: 5px;
-  border-left: 1px solid gray;
-  border-top: 1px solid gray;
+.bannersaludo .modos .light {
+  height: 20px;
+  width: 20px;
 }
-.bannersaludo .modos button:hover {
-  background-color: hotpink;
+.bannersaludo .modos .light:hover {
+  transform: scale(1.2);
+}
+.bannersaludo .modos .dark {
+  height: 20px;
+  width: 20px;
+}
+.bannersaludo .modos .dark:hover {
+  transform: scale(1.2);
 }
 
 /* banner de foto*/

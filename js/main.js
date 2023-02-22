@@ -7,7 +7,7 @@ function selectMode (mode) {
         color = "azure"
         borde = "3px solid azure"
     } else {
-        bgcolor = "ghostWhite"
+        bgcolor = "azure"
         color = "#212529"
         borde = "3px solid #212529"
     }

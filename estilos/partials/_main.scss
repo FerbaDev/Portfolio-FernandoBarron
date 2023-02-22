@@ -100,13 +100,19 @@
         gap: 0.5em;
         margin-right: 1em;
 
-        button {
-            padding: 5px;
-            border-left: 1px solid gray;
-            border-top: 1px solid gray;
-
+        .light {
+            height: 20px;
+            width: 20px;
+            
             &:hover {
-                background-color: hotpink;
+                transform: scale(1.2);
+            }
+        }
+        .dark {
+            height: 20px;
+            width: 20px;
+            &:hover {
+                transform: scale(1.2);
             }
         }
 
