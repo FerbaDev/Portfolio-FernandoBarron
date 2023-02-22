@@ -97,6 +97,8 @@
     .modos {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        justify-content: center;
         gap: 0.5em;
         margin-right: 1em;
 
@@ -106,6 +108,7 @@
             
             &:hover {
                 transform: scale(1.2);
+                color: yellow;
             }
         }
         .dark {
@@ -113,6 +116,7 @@
             width: 20px;
             &:hover {
                 transform: scale(1.2);
+                color: cornflowerblue;
             }
         }
 
