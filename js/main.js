@@ -1,5 +1,8 @@
 // modo claro/oscuro
 function selectMode (mode) {
+    let color = "azure";
+    let bgcolor = "#212529";
+    let borde = "3px solid azure";
 
 
     if (mode === "dark") {
@@ -15,6 +18,7 @@ function selectMode (mode) {
 document.getElementById("theme").style.backgroundColor = bgcolor;
 document.getElementById("theme").style.color = color;
 document.getElementById("masInfo").style.border = borde;
+document.getElementById("navbar").style.backgroundColor = bgcolor;
 
 }
 
