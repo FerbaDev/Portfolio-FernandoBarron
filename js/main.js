@@ -24,15 +24,15 @@ document.getElementById("navbar").style.backgroundColor = bgcolor;
 
 
 //empieza funcion de mas info
-const continuar1 = "Soy Front End Developer" ;
+const continuar1 = "Mira mis proyectos" ;
 
 
 const cancelar1 = "Gracias por pasar!";
 function continuarsi() {
-    document.getElementById('id-info').innerHTML = continuar1;
+    document.getElementById('id-info1').innerHTML = continuar1;
 }
 
 function continuarno() {
-    document.getElementById('id-info').innerHTML = cancelar1;
+    document.getElementById('id-info2').innerHTML = cancelar1;
 }
 
