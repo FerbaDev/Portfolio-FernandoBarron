@@ -19,20 +19,21 @@ document.getElementById("theme").style.backgroundColor = bgcolor;
 document.getElementById("theme").style.color = color;
 document.getElementById("masInfo").style.border = borde;
 document.getElementById("navbar").style.backgroundColor = bgcolor;
+document.getElementById("barra").style.backgroundColor = bgcolor;
+
 
 }
 
 
 //empieza funcion de mas info
-const continuar1 = "Mira mis proyectos" ;
 
-
-const cancelar1 = "Gracias por pasar!";
-function continuarsi() {
-    document.getElementById('id-info1').innerHTML = continuar1;
+function continuar() {
+    document.getElementById('id-info1').style.display='block';
+    document.getElementById('id-info2').style.display='none';
 }
 
-function continuarno() {
-    document.getElementById('id-info2').innerHTML = cancelar1;
+function cancelar() {
+    document.getElementById('id-info2').style.display='block';
+    document.getElementById('id-info1').style.display='none';
 }
 

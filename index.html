@@ -7,7 +7,7 @@
     <title>CV - FerBarron</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="shortcut icon" href="./imagenes/FerbaDevFavicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./imagenes/f-alphabet-icon.png" type="image/x-icon">
 </head>
 <body class="theme" id="theme">
     <!-- navbar -->
@@ -17,7 +17,7 @@
             <button class="dropbtn">Menú
                 <i class="fa fa-caret-down"></i>
             </button>
-            <div class="dropdown-content">
+            <div class="dropdown-content" id="barra">
                 <a href="./pages/sobreMi.html">Sobre mí</a>
                 <a href="https://github.com/FerbaDev" target="_blank">Proyectos</a>
                 <a href="#contacto">Contacto</a>
@@ -46,16 +46,16 @@
                 <div class="mas-info" id="masInfo">
                     <p>¿Más info?</p>
                     <div class="info-botones">
-                        <button id="info-cancelar" onclick="continuarno()">Cancelar</button>
-                        <button id="info-continuar" onclick="continuarsi()">Continuar</button>
+                        <button id="info-cancelar" onclick="cancelar()">Cancelar</button>
+                        <button id="info-continuar" onclick="continuar()">Continuar</button>
                     </div>
-                    <p id="id-info2"></p>
-                    <a href="https://github.com/FerbaDev" target="_blank" id="id-info1" style="color: red;"></a>
+                    <p id="id-info2" style="display: none;">Gracias por pasar!</p>
+                    <p id="id-info1" style="color: red; display: none;">Soy Desarrollador Front End.</p>
                 </div>
             </div>
         </div>
         <div class="extra">
-            <p>- Soy desarrollador web y estudiante de programación Front End. Aspirante a Full Stack Dev.</p>
+            <p>- Soy desarrollador web y estudiante de desarrollo Front End. Aspirante a Full Stack Dev.</p>
             <p>- Mi objetivo profesional es desarrollar mi carrera en una organización que me permita profundizar mis habilidades y comocimientos.</p>
             <p>- Experiencia laboral administrativa, gestión, capacitación y emprendimientos personales, inversiones, redes sociales.</p>
             <p>- I have a good english level.</p>
