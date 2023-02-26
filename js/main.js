@@ -1,3 +1,4 @@
+console.log("Trabajo final de Argentina programa 4.0")
 // modo claro/oscuro
 function selectMode (mode) {
     let color = "azure";
