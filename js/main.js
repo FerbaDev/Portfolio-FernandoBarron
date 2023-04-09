@@ -84,7 +84,9 @@ function mostrarMasInfo() {
                 </fieldset>`;
     contenedorEstudios.append(aEstudiar);
 
-    continuar.removeEventListener("click", mostrarMasInfo);
+    botonContinuar.removeEventListener("click", mostrarMasInfo);
+
+    botonCancelar.addEventListener("click", cancelar);
 
 }
 
@@ -107,6 +109,8 @@ function cancelar() {
     contenedorEstudios.append(gracias);
 
     botonCancelar.removeEventListener("click", cancelar);
+
+    botonContinuar.addEventListener("click", mostrarMasInfo);
     
 }
 
