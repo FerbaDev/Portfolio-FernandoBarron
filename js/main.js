@@ -1,29 +1,50 @@
 console.log("Trabajo final de Argentina programa 4.0")
-// modo claro/oscuro
-function selectMode (mode) {
-    let color = "azure";
-    let bgcolor = "#212529";
-    let borde = "3px solid azure";
 
 
-    if (mode === "dark") {
-        bgcolor = "#212529"
-        color = "azure"
-        borde = "3px solid azure"
-    } else {
-        bgcolor = "azure"
-        color = "#212529"
-        borde = "3px solid #212529"
-    }
+const sol = document.querySelector("#botonModoClaro");
+const luna = document.querySelector("#dark");
+const body = document.body;
+const navbar = document.querySelector("#navbar");
+const borde = document.getElementById("masInfo");
 
-document.getElementById("theme").style.backgroundColor = bgcolor;
-document.getElementById("theme").style.color = color;
-document.getElementById("masInfo").style.border = borde;
-document.getElementById("navbar").style.backgroundColor = bgcolor;
-document.getElementById("barra").style.backgroundColor = bgcolor;
+sol.addEventListener("click", modoClaro);
+luna.addEventListener("click", modoOscuro);
 
 
+function modoClaro() {
+    body.classList.add("claro");
+    navbar.classList.add("claro");
+    document.getElementById("masInfo").style.borderColor = "#212529";
 }
+function modoOscuro() {
+    body.classList.remove("claro");
+    navbar.classList.remove("claro");
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// document.getElementById("theme").style.backgroundColor = bgcolor;
+// document.getElementById("theme").style.color = color;
+// document.getElementById("masInfo").style.border = borde;
+// document.getElementById("navbar").style.backgroundColor = bgcolor;
+// document.getElementById("barra").style.backgroundColor = bgcolor;
+
 
 
 //empieza funcion de mas info

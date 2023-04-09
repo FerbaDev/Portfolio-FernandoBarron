@@ -6,7 +6,7 @@
   font-family: "Press Start 2P", cursive;
 }
 
-.theme {
+body {
   background-color: #212529;
   color: azure;
 }
@@ -317,6 +317,16 @@
     background-color: mediumblue;
   }
 }
+.claro {
+  background-color: azure;
+  color: #212529;
+}
+
+.oscuro {
+  background-color: #212529;
+  color: azure;
+}
+
 @media screen and (max-width: 1500px) {
   .contenido {
     flex-direction: row;
