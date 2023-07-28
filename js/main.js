@@ -1,5 +1,4 @@
-console.log("Trabajo final de Argentina programa 4.0")
-
+console.log("Trabajo final de Argentina programa 4.0");
 
 const sol = document.querySelector("#botonModoClaro");
 const luna = document.querySelector("#dark");
@@ -10,31 +9,27 @@ const bordesEstudios = document.querySelectorAll(".bordesEstudios");
 const botonContinuar = document.getElementById("info-continuar");
 const contenedorEstudios = document.getElementById("contenedorEstudios");
 
-
-
 sol.addEventListener("click", modoClaro);
 luna.addEventListener("click", modoOscuro);
 
-
 function modoClaro() {
-    body.classList.add("claro");
-    navbar.classList.add("claro");
-    cartelMasInfo.style.borderColor = "#212529";
+  body.classList.add("claro");
+  navbar.classList.add("claro");
+  cartelMasInfo.style.borderColor = "#212529";
 }
 function modoOscuro() {
-    body.classList.remove("claro");
-    navbar.classList.remove("claro");
-    cartelMasInfo.style.borderColor = "azure";
+  body.classList.remove("claro");
+  navbar.classList.remove("claro");
+  cartelMasInfo.style.borderColor = "azure";
 }
-
 
 botonContinuar.addEventListener("click", mostrarMasInfo);
 
 function mostrarMasInfo() {
-    contenedorEstudios.innerHTML = "";
-    const estudios = document.createElement("div");
-    estudios.classList.add("estudios");
-    estudios.innerHTML = `
+  contenedorEstudios.innerHTML = "";
+  const estudios = document.createElement("div");
+  estudios.classList.add("estudios");
+  estudios.innerHTML = `
     <fieldset class="fieldset">
         <legend class="legend">Mis conocimientos:</legend>
         <ul class="lista-estudios">
@@ -48,30 +43,34 @@ function mostrarMasInfo() {
             <li>Accesibilidad</li>
             <li>SEO</li>
             <li>Git/Github</li>
+            <li>JavaScript</li>
+            <li>Ajax & Fetch</li>
+            <li>Frameworks</li>
+            <li>React JS</li>
+            <li>Vite</li>
+            <li>Firebase</li>
+            <li>Material UI</li>
         </ul>
     </fieldset>`;
-    contenedorEstudios.append(estudios);
+  contenedorEstudios.append(estudios);
 
-    const estudiando = document.createElement("div");
-    estudiando.classList.add("estudiando");
-    estudiando.innerHTML = `
+  const estudiando = document.createElement("div");
+  estudiando.classList.add("estudiando");
+  estudiando.innerHTML = `
     <fieldset class="fieldset-est">
         <legend class="legend-est">Estudiando:</legend>
         <ul class="lista-estudios">
-            <li>JavaScript ES6</li>
+            <li>React avanzado</li>
         </ul>
     </fieldset>`;
-    contenedorEstudios.append(estudiando);
+  contenedorEstudios.append(estudiando);
 
-    const aEstudiar = document.createElement("div");
-    aEstudiar.classList.add("aestudiar");
-    aEstudiar.innerHTML = `
+  const aEstudiar = document.createElement("div");
+  aEstudiar.classList.add("aestudiar");
+  aEstudiar.innerHTML = `
                 <fieldset class="fieldset-aest">
                     <legend class="legend-aest">A estudiar:</legend>
                         <ul class="lista-aestudios">
-                            <li>React JS</li>
-                            <li>Ajax & Fetch</li>
-                            <li>Frameworks & NodeJS</li>
                             <li>Python</li>
                             <li>NPM</li>
                             <li>Websockets</li>
@@ -82,44 +81,31 @@ function mostrarMasInfo() {
                             <li>GraphQL</li>
                         </ul>
                 </fieldset>`;
-    contenedorEstudios.append(aEstudiar);
+  contenedorEstudios.append(aEstudiar);
 
-    botonContinuar.removeEventListener("click", mostrarMasInfo);
+  botonContinuar.removeEventListener("click", mostrarMasInfo);
 
-    botonCancelar.addEventListener("click", cancelar);
-
+  botonCancelar.addEventListener("click", cancelar);
 }
-
 
 const botonCancelar = document.getElementById("info-cancelar");
 
 botonCancelar.addEventListener("click", cancelar);
 
 function cancelar() {
-    contenedorEstudios.innerHTML = "";
-    const gracias = document.createElement("div");
-    gracias.classList.add("aestudiar");
-    gracias.innerHTML = `
+  contenedorEstudios.innerHTML = "";
+  const gracias = document.createElement("div");
+  gracias.classList.add("aestudiar");
+  gracias.innerHTML = `
                 <fieldset class="fieldset-aest">
                         <ul class="lista-aestudios">
                             <span>Muchas gracias por pasar!</span>
                         </ul>
                 </fieldset>
-    `
-    contenedorEstudios.append(gracias);
+    `;
+  contenedorEstudios.append(gracias);
 
-    botonCancelar.removeEventListener("click", cancelar);
+  botonCancelar.removeEventListener("click", cancelar);
 
-    botonContinuar.addEventListener("click", mostrarMasInfo);
-    
+  botonContinuar.addEventListener("click", mostrarMasInfo);
 }
-
-
-
-
-
-
-
-
-
-

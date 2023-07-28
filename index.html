@@ -1,80 +1,96 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CV - Fernando Barron</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="./estilos/style.css">
-    <link rel="shortcut icon" href="./imagenes/f-alphabet-icon.png" type="image/x-icon">
-</head>
-<body>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./estilos/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./imagenes/f-alphabet-icon.png"
+      type="image/x-icon"
+    />
+  </head>
+  <body>
     <!-- navbar -->
     <div class="navbar" id="navbar">
-        <a href="./index.html">FerbaDev</a>
-        <div class="dropdown">
-            <button class="dropbtn">Menú
-                <i class="fa fa-caret-down"></i>
-            </button>
-            <div class="dropdown-content" id="barra">
-                <a href="./pages/sobreMi.html">Sobre mí</a>
-                <a href="https://github.com/FerbaDev" target="_blank">Proyectos</a>
-                <a href="#contacto">Contacto</a>
-            </div>
+      <a href="./index.html">FerbaDev</a>
+      <div class="dropdown">
+        <button class="dropbtn">
+          Menú
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content" id="barra">
+          <a href="./pages/sobreMi.html">Sobre mí</a>
+          <a href="https://github.com/FerbaDev" target="_blank">Proyectos</a>
+          <a href="#contacto">Contacto</a>
         </div>
+      </div>
     </div>
-    <hr>
+    <hr />
     <!-- cierra navbar -->
     <!-- empieza main -->
     <main>
-        <div class="bannersaludo">
-            <h1>Hola mundo!</h1>
-            <div class="modos">
-                <i class="fa-regular fa-sun light" id="botonModoClaro"></i>
-                <i class="fa-regular fa-moon dark" id="dark"></i>
-            </div>
+      <div class="bannersaludo">
+        <h1>Hola mundo!</h1>
+        <div class="modos">
+          <i class="fa-regular fa-sun light" id="botonModoClaro"></i>
+          <i class="fa-regular fa-moon dark" id="dark"></i>
         </div>
-        <div class="contenido">
-            <div class="presentacion">
-                <div class="name-pic">
-                    <span class="name">Soy Fernando Barron.</span>
-                    <img src="./imagenes/avatar.jpg" alt="avatar">
-                </div>
-            </div>
-            <div class="extra">
-                <p>- Soy Desarrollador Front End. Aspirante a Full Stack.</p>
-                <p>- Mi objetivo profesional es desarrollar mi carrera en una organización que me permita profundizar mis habilidades y comocimientos.</p>
-                <p>- Experiencia laboral administrativa, gestión, capacitación y emprendimientos personales, inversiones, redes sociales.</p>
-                <p>- I have a good english level.</p>
-            </div>
+      </div>
+      <div class="contenido">
+        <div class="presentacion">
+          <div class="name-pic">
+            <span class="name">Soy Fernando Barron.</span>
+            <img src="./imagenes/avatar.jpg" alt="avatar" />
+          </div>
         </div>
-        <div class="principal">
-            <div class="mas-info" id="masInfo">
-                <p>¿Más info?</p>
-                <div class="info-botones">
-                    <button id="info-cancelar">Cancelar</button>
-                    <button id="info-continuar">Continuar</button>
-                </div>
-            </div>
+        <div class="extra">
+          <p>- Soy Desarrollador Front End React.</p>
+          <p>- Landing Pages. Sitios Web. E-commerce. Maquetado.</p>
         </div>
-        <div id="contenedorEstudios">
-
-            <!-- Aca se inyecta JS -->
-
+      </div>
+      <div class="principal">
+        <div class="mas-info" id="masInfo">
+          <p>¿Más info?</p>
+          <div class="info-botones">
+            <button id="info-cancelar">Cancelar</button>
+            <button id="info-continuar">Continuar</button>
+          </div>
         </div>
+      </div>
+      <div id="contenedorEstudios">
+        <!-- Aca se inyecta JS -->
+      </div>
     </main>
     <footer class="contacto" id="contacto">
-        <span class="contacto-tit">Contacto:</span>
-        <div class="contacto-items">
-            <a href="https://wa.me/5493571573266?text=Hola!%20Soy%20Fer,%20%C2%BFen%20qu%C3%A9%20te%20puedo%20ayudar?" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
-            <a href="mailto:ferbadev@gmail.com"><i class="fa-regular fa-envelope"></i></a>
-            <a href="https://github.com/FerbaDev" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/fer-barron/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        </div>
+      <span class="contacto-tit">Contacto:</span>
+      <div class="contacto-items">
+        <a
+          href="https://wa.me/5493571573266?text=Hola!%20Soy%20Fer,%20%C2%BFen%20qu%C3%A9%20te%20puedo%20ayudar?"
+          target="_blank"
+          ><i class="fa-brands fa-whatsapp"></i
+        ></a>
+        <a href="mailto:ferbadev@gmail.com"
+          ><i class="fa-regular fa-envelope"></i
+        ></a>
+        <a href="https://github.com/FerbaDev" target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a href="https://www.linkedin.com/in/fer-barron/" target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
     </footer>
 
-
     <script src="./js/main.js"></script>
-</body>
+  </body>
 </html>
