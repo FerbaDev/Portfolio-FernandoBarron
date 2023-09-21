@@ -1,340 +1,333 @@
 /* Navbar container */
 .navbar {
-    overflow: hidden;
-    background-color: #212529;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-inline: 20px;
+  overflow: hidden;
+  background-color: #212529;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-inline: 20px;
 
-    a {
-        font-size: 16px;
-        color: hotpink;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-    }
-}
-
-  /* The dropdown container */
-.dropdown {
-    overflow: hidden;
-
-    .dropbtn {
-        font-size: 16px;
-        border: none;
-        outline: none;
-        color: hotpink;
-        padding: 14px 16px;
-        background-color: inherit;
-        font-family: inherit; 
-        margin: 0; 
-    }
-}
-
-  /* hover en links */
-.navbar a:hover, .dropdown:hover .dropbtn {
-    color: deeppink;
-}
-
-  /* Dropdown contenido hiden */
-.dropdown-content {
-    display: none;
-    position: absolute;
-    min-width: 160px;
-    border: 1px solid azure;
-    z-index: 1;
-    background-color: #212529;
-}
-
-  /* Links en dropdown */
-.dropdown-content a {
-    float: none;
-    color: rgb(203, 142, 172);
-    padding: 5px 10px 5px 5px;
+  a {
+    font-size: 16px;
+    color: hotpink;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    display: block;
-    text-align: left;
-    
-    
+  }
 }
 
-  /* color de fondo en hover */
+/* The dropdown container */
+.dropdown {
+  overflow: hidden;
+
+  .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: hotpink;
+    padding: 14px 20px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+  }
+}
+
+/* hover en links */
+.navbar a:hover,
+.dropdown:hover .dropbtn {
+  color: deeppink;
+}
+
+/* Dropdown contenido hiden */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 200px;
+  border: 1px solid azure;
+  z-index: 1;
+  background-color: #212529;
+}
+
+/* Links en dropdown */
+.dropdown-content a {
+  float: none;
+  color: rgb(203, 142, 172);
+  padding: 5px 15px 5px 5px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* color de fondo en hover */
 .dropdown-content a:hover {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
-  /* muestra el menu en cascada en hover */
+/* muestra el menu en cascada en hover */
 .dropdown:hover .dropdown-content {
-    display: block;
+  display: block;
 }
 /* cierra navbar  */
-
-
 
 // main main main main main main main main main main main main main
 
 // contenido
 .contenido {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
-
 
 //presentacion
 
 .presentacion {
-    display: flex;
-    flex-direction: column;
-
-
+  display: flex;
+  flex-direction: column;
 }
 //empieza el cartel de saludo
 .bannersaludo {
-    margin: 32px;
+  margin: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .modos {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    margin-right: 1em;
 
-    .modos {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        gap: 0.5em;
-        margin-right: 1em;
+    .light {
+      height: 20px;
+      width: 20px;
 
-        .light {
-            height: 20px;
-            width: 20px;
-            
-            &:hover {
-                transform: scale(1.2);
-                color: yellow;
-            }
-        }
-        .dark {
-            height: 20px;
-            width: 20px;
-            &:hover {
-                transform: scale(1.2);
-                color: cornflowerblue;
-            }
-        }
-
+      &:hover {
+        transform: scale(1.2);
+        color: yellow;
+      }
     }
+    .dark {
+      height: 20px;
+      width: 20px;
+      &:hover {
+        transform: scale(1.2);
+        color: cornflowerblue;
+      }
+    }
+  }
 }
-
-
 
 /* banner de foto*/
 .name-pic {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 20px;
-    padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 20px;
+  padding: 10px;
 
-    .name {
-        font-size: 1.5em;
-    }
+  .name {
+    font-size: 1.5em;
+  }
 
-    img {
-        width: fit-content;
-        margin-top: 15px;
-    }
+  img {
+    width: fit-content;
+    margin-top: 15px;
+  }
 }
 .principal {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 /*empieza banner mas info*/
 .mas-info {
-    display: flex;
-    flex-direction: column;
-    padding: 30px;
-    border: 3px solid azure;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border: 3px solid azure;
+  width: fit-content;
+  margin-inline: 20px;
+  margin-bottom: 20px;
+  gap: 1em;
+
+  #id-info {
+    margin-top: 1em;
+  }
+
+  animation: blink 0.5s step-end infinite alternate;
+
+  p {
     width: fit-content;
-    margin-inline: 20px;
-    margin-bottom: 20px;
-    gap: 1em;
+  }
+  .info-botones {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    width: fit-content;
 
-    #id-info {
-        margin-top: 1em;
+    button {
+      padding: 7px;
+      border: 2px solid #212529;
+      &:hover {
+        background-color: mediumvioletred;
+      }
     }
-
-    animation: blink .5s step-end infinite alternate;
-        
-        p{
-            width: fit-content;
-        }
-        .info-botones {
-            display: flex;
-            flex-direction: row;
-            gap: 1rem;
-            width: fit-content;
-
-            button {
-                padding: 7px;
-                border: 2px solid #212529;
-                &:hover {
-                    background-color: mediumvioletred;
-                }
-            }
-        }
+  }
 }
 @keyframes blink {
-    50% { border-color: transparent;}
+  50% {
+    border-color: transparent;
+  }
 }
 /*cierra banner mas info*/
 /* parrafos extras*/
 .extra {
-    margin: 20px;
-    width: 75%;
+  margin: 20px;
+  width: 75%;
 
-    p {
-        margin-bottom: 15px;
-        text-align: start;
-        line-height: 1.5em;
-    }
+  p {
+    margin-bottom: 15px;
+    text-align: start;
+    line-height: 1.5em;
+  }
 }
 
 /* cartel de estudios */
 .estudios {
-    width: 50%;
-    margin: 30px;
-    padding: 30px;
+  width: 50%;
+  margin: 30px;
+  padding: 30px;
+  background-color: $conocimientos;
+  border: 1px solid azure;
+  color: azure;
+
+  .fieldset {
     background-color: $conocimientos;
-    border: 1px solid azure;
-    color: azure;
-
-    .fieldset {
-        background-color: $conocimientos;
-        legend {
-            background-color: $conocimientos;
-        }
-        ul {
-            padding: 20px;
-            background-color: $conocimientos;
-
-            li{
-                background-color: $conocimientos;
-                padding-block: 5px;
-            }
-        }
+    legend {
+      background-color: $conocimientos;
     }
+    ul {
+      padding: 20px;
+      background-color: $conocimientos;
+
+      li {
+        background-color: $conocimientos;
+        padding-block: 5px;
+      }
+    }
+  }
 }
 
 /* cierra cartel de estudios */
 /* cartel de estudiando*/
 .estudiando {
-    width: 50%;
-    margin: 30px;
-    padding: 30px;
+  width: 50%;
+  margin: 30px;
+  padding: 30px;
+  background-color: $estudiando;
+  border: 1px solid azure;
+  color: azure;
+
+  .fieldset-est {
     background-color: $estudiando;
-    border: 1px solid azure;
-    color: azure;
-
-    .fieldset-est {
-        background-color: $estudiando;
-        .legend-est {
-            background-color: $estudiando;
-        }
-        ul {
-            padding: 20px;
-            background-color: $estudiando;
-
-            li{
-                background-color: $estudiando;
-                padding-block: 5px;
-            }
-        }
+    .legend-est {
+      background-color: $estudiando;
     }
+    ul {
+      padding: 20px;
+      background-color: $estudiando;
+
+      li {
+        background-color: $estudiando;
+        padding-block: 5px;
+      }
+    }
+  }
 }
 /* cierra cartel estudiando*/
 /* cartel de proximo a estudiar*/
 .aestudiar {
-    width: 50%;
-    margin: 30px;
-    padding: 30px;
+  width: 50%;
+  margin: 30px;
+  padding: 30px;
+  background-color: $aestudiar;
+  border: 1px solid azure;
+  color: azure;
+
+  .fieldset-aest {
     background-color: $aestudiar;
-    border: 1px solid azure;
-    color: azure;
-
-    .fieldset-aest {
-        background-color: $aestudiar;
-        .legend-aest {
-            background-color: $aestudiar;
-        }
-        .lista-aestudios {
-            padding: 20px;
-            background-color: $aestudiar;
-
-            li{
-                background-color: $aestudiar;
-                padding-block: 5px;
-            }
-        }
+    .legend-aest {
+      background-color: $aestudiar;
     }
+    .lista-aestudios {
+      padding: 20px;
+      background-color: $aestudiar;
+
+      li {
+        background-color: $aestudiar;
+        padding-block: 5px;
+      }
+    }
+  }
 }
 .contacto {
-    height: 10em;
-    background-color: deeppink;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5em;
+  height: 10em;
+  background-color: deeppink;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  animation: fondocolores 20s infinite alternate;
+
+  .contacto-tit {
+    animation: fondocolores 20s infinite alternate;
+  }
+  .contacto-items {
     animation: fondocolores 20s infinite alternate;
 
-    .contacto-tit {
+    a {
+      font-size: 1.5em;
+      animation: fondocolores 20s infinite alternate;
+      color: azure;
+      i {
         animation: fondocolores 20s infinite alternate;
+      }
     }
-    .contacto-items {
-        animation: fondocolores 20s infinite alternate;
-        
-        a {
-            font-size: 1.5em;
-            animation: fondocolores 20s infinite alternate;
-            color: azure;
-            i {
-                animation: fondocolores 20s infinite alternate;
-            }
-        }
-    }
+  }
 }
 @keyframes fondocolores {
-    0% {
-        background-color: blueviolet;
-    }
-    16% {
-        background-color: darkorchid;
-    }
-    32% {
-        background-color: deeppink;
-    }
-    48% {
-        background-color: fuchsia;
-    }
-    64% {
-        background-color: hotpink;
-    }
-    82% {
-        background-color: indigo;
-    }
-    100% {
-        background-color: mediumblue;
-    }
+  0% {
+    background-color: blueviolet;
+  }
+  16% {
+    background-color: darkorchid;
+  }
+  32% {
+    background-color: deeppink;
+  }
+  48% {
+    background-color: fuchsia;
+  }
+  64% {
+    background-color: hotpink;
+  }
+  82% {
+    background-color: indigo;
+  }
+  100% {
+    background-color: mediumblue;
+  }
 }
 
 .claro {
-    background-color: azure;
-    color: #212529;
+  background-color: azure;
+  color: #212529;
 }
 
 .oscuro {
-    background-color: #212529;
-    color: azure;
+  background-color: #212529;
+  color: azure;
 }

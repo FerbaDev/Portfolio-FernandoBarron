@@ -18,7 +18,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-inline: 20px;
+  padding-inline: 20px;
 }
 .navbar a {
   font-size: 16px;
@@ -37,14 +37,15 @@ body {
   border: none;
   outline: none;
   color: hotpink;
-  padding: 14px 16px;
+  padding: 14px 20px;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
 }
 
 /* hover en links */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   color: deeppink;
 }
 
@@ -52,7 +53,7 @@ body {
 .dropdown-content {
   display: none;
   position: absolute;
-  min-width: 160px;
+  min-width: 200px;
   border: 1px solid azure;
   z-index: 1;
   background-color: #212529;
@@ -62,7 +63,7 @@ body {
 .dropdown-content a {
   float: none;
   color: rgb(203, 142, 172);
-  padding: 5px 10px 5px 5px;
+  padding: 5px 15px 5px 5px;
   text-decoration: none;
   display: block;
   text-align: left;
