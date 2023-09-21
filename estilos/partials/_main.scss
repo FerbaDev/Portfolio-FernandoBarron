@@ -90,13 +90,16 @@
   flex-direction: row;
   justify-content: space-between;
 
+  h1 {
+    max-width: 60%;
+  }
+
   .modos {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     gap: 0.5em;
-    margin-right: 1em;
 
     .light {
       height: 20px;
