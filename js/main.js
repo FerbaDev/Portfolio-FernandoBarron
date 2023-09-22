@@ -65,23 +65,23 @@ function mostrarMasInfo() {
     </fieldset>`;
   contenedorEstudios.append(estudiando);
 
-  const aEstudiar = document.createElement("div");
-  aEstudiar.classList.add("aestudiar");
-  aEstudiar.innerHTML = `
-                <fieldset class="fieldset-aest">
-                    <legend class="legend-aest">A estudiar:</legend>
-                        <ul class="lista-aestudios">
-                            <li>Python</li>
-                            <li>NPM</li>
-                            <li>Websockets</li>
-                            <li>SQL</li>
-                            <li>MongoDB</li>
-                            <li>Mongoose</li>
-                            <li>Twilio & OWASP</li>
-                            <li>GraphQL</li>
-                        </ul>
-                </fieldset>`;
-  contenedorEstudios.append(aEstudiar);
+  // const aEstudiar = document.createElement("div");
+  // aEstudiar.classList.add("aestudiar");
+  // aEstudiar.innerHTML = `
+  //               <fieldset class="fieldset-aest">
+  //                   <legend class="legend-aest">A estudiar:</legend>
+  //                       <ul class="lista-aestudios">
+  //                           <li>Python</li>
+  //                           <li>NPM</li>
+  //                           <li>Websockets</li>
+  //                           <li>SQL</li>
+  //                           <li>MongoDB</li>
+  //                           <li>Mongoose</li>
+  //                           <li>Twilio & OWASP</li>
+  //                           <li>GraphQL</li>
+  //                       </ul>
+  //               </fieldset>`;
+  // contenedorEstudios.append(aEstudiar);
 
   botonContinuar.removeEventListener("click", mostrarMasInfo);
 
