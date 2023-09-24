@@ -143,6 +143,44 @@
   flex-direction: column;
 }
 
+/* cards proyectos   */
+
+.proyectos {
+  padding: 20px;
+  h2 {
+    font-size: 1.2em;
+    padding-block: 20px;
+  }
+  .card-proyectos {
+    border: solid 1px white;
+    padding: 10px;
+
+    img {
+      width: 100%;
+    }
+    .card-text {
+      h2 {
+        padding-block: 10px;
+      }
+      p {
+        padding-block: 10px;
+      }
+      .categoria {
+        font-size: 0.8em;
+        color: darkgray;
+      }
+    }
+    button {
+      width: 100%;
+      padding: 5px;
+
+      a {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
 /*empieza banner mas info*/
 .mas-info {
   display: flex;

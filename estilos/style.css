@@ -11,6 +11,11 @@ body {
   color: azure;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* Navbar container */
 .navbar {
   overflow: hidden;
@@ -143,6 +148,39 @@ body {
 .principal {
   display: flex;
   flex-direction: column;
+}
+
+/* cards proyectos   */
+.proyectos {
+  padding: 20px;
+}
+.proyectos h2 {
+  font-size: 1.2em;
+  padding-block: 20px;
+}
+.proyectos .card-proyectos {
+  border: solid 1px white;
+  padding: 10px;
+}
+.proyectos .card-proyectos img {
+  width: 100%;
+}
+.proyectos .card-proyectos .card-text h2 {
+  padding-block: 10px;
+}
+.proyectos .card-proyectos .card-text p {
+  padding-block: 10px;
+}
+.proyectos .card-proyectos .card-text .categoria {
+  font-size: 0.8em;
+  color: darkgray;
+}
+.proyectos .card-proyectos button {
+  width: 100%;
+  padding: 5px;
+}
+.proyectos .card-proyectos button a {
+  text-decoration: none;
 }
 
 /*empieza banner mas info*/
