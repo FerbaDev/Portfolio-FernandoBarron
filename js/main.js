@@ -54,16 +54,16 @@ function mostrarMasInfo() {
     </fieldset>`;
   contenedorEstudios.append(estudios);
 
-  const estudiando = document.createElement("div");
-  estudiando.classList.add("estudiando");
-  estudiando.innerHTML = `
-    <fieldset class="fieldset-est">
-        <legend class="legend-est">Estudiando:</legend>
-        <ul class="lista-estudios">
-            <li>React avanzado</li>
-        </ul>
-    </fieldset>`;
-  contenedorEstudios.append(estudiando);
+  // const estudiando = document.createElement("div");
+  // estudiando.classList.add("estudiando");
+  // estudiando.innerHTML = `
+  //   <fieldset class="fieldset-est">
+  //       <legend class="legend-est">Estudiando:</legend>
+  //       <ul class="lista-estudios">
+  //           <li>React avanzado</li>
+  //       </ul>
+  //   </fieldset>`;
+  // contenedorEstudios.append(estudiando);
 
   // const aEstudiar = document.createElement("div");
   // aEstudiar.classList.add("aestudiar");
@@ -108,4 +108,7 @@ function cancelar() {
   botonCancelar.removeEventListener("click", cancelar);
 
   botonContinuar.addEventListener("click", mostrarMasInfo);
+  setTimeout(() => {
+    contenedorEstudios.innerHTML = "";
+  }, 2000);
 }
