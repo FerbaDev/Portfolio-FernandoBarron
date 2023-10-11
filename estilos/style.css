@@ -175,6 +175,12 @@ a {
   font-size: 0.8em;
   color: darkgray;
 }
+.proyectos .card-proyectos .card-text .talba {
+  color: #00ff00;
+}
+.proyectos .card-proyectos .card-text .talba:hover {
+  color: #005eff;
+}
 .proyectos .card-proyectos button {
   width: 100%;
   padding: 5px;

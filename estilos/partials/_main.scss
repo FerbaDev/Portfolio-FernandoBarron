@@ -169,6 +169,12 @@
         font-size: 0.8em;
         color: darkgray;
       }
+      .talba {
+        color: #00ff00;
+        &:hover {
+          color: #005eff;
+        }
+      }
     }
     button {
       width: 100%;
