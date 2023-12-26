@@ -146,6 +146,9 @@
 /* cards proyectos   */
 
 .proyectos {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
   padding: 20px;
   h2 {
     font-size: 1.2em;

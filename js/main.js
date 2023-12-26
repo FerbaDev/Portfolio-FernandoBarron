@@ -34,7 +34,7 @@ function mostrarMasInfo() {
         <legend class="legend">Mis conocimientos:</legend>
         <ul class="lista-estudios">
             <li>HTML5</li>
-            <li>CSS3</li>
+            <li>CSS3 y librerías</li>
             <li>Flex-box</li>
             <li>Grids</li>
             <li>Bootstrap</li>
@@ -45,11 +45,12 @@ function mostrarMasInfo() {
             <li>Git/Github</li>
             <li>JavaScript</li>
             <li>Ajax & Fetch</li>
-            <li>Frameworks</li>
+            <li>JS Frameworks</li>
             <li>React JS</li>
             <li>Vite</li>
             <li>Firebase</li>
             <li>Material UI</li>
+            <li>Integración de Mercado Pago</li>
         </ul>
     </fieldset>`;
   contenedorEstudios.append(estudios);
@@ -65,23 +66,23 @@ function mostrarMasInfo() {
   //   </fieldset>`;
   // contenedorEstudios.append(estudiando);
 
-  // const aEstudiar = document.createElement("div");
-  // aEstudiar.classList.add("aestudiar");
-  // aEstudiar.innerHTML = `
-  //               <fieldset class="fieldset-aest">
-  //                   <legend class="legend-aest">A estudiar:</legend>
-  //                       <ul class="lista-aestudios">
-  //                           <li>Python</li>
-  //                           <li>NPM</li>
-  //                           <li>Websockets</li>
-  //                           <li>SQL</li>
-  //                           <li>MongoDB</li>
-  //                           <li>Mongoose</li>
-  //                           <li>Twilio & OWASP</li>
-  //                           <li>GraphQL</li>
-  //                       </ul>
-  //               </fieldset>`;
-  // contenedorEstudios.append(aEstudiar);
+  const aEstudiar = document.createElement("div");
+  aEstudiar.classList.add("aestudiar");
+  aEstudiar.innerHTML = `
+                <fieldset class="fieldset-aest">
+                    <legend class="legend-aest">A estudiar:</legend>
+                        <ul class="lista-aestudios">
+                            <li>Python</li>
+                            <li>NPM</li>
+                            <li>Websockets</li>
+                            <li>SQL</li>
+                            <li>MongoDB</li>
+                            <li>Mongoose</li>
+                            <li>Twilio & OWASP</li>
+                            <li>GraphQL</li>
+                        </ul>
+                </fieldset>`;
+  contenedorEstudios.append(aEstudiar);
 
   botonContinuar.removeEventListener("click", mostrarMasInfo);
 
