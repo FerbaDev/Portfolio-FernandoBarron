@@ -35,8 +35,7 @@ function mostrarMasInfo() {
         <ul class="lista-estudios">
             <li>HTML5</li>
             <li>CSS3 y librerías</li>
-            <li>Flex-box</li>
-            <li>Grids</li>
+            <li>Flex-box y Grid</li>
             <li>Bootstrap</li>
             <li>Sass</li>
             <li>Responsive design</li>
@@ -44,45 +43,25 @@ function mostrarMasInfo() {
             <li>SEO</li>
             <li>Git/Github</li>
             <li>JavaScript</li>
-            <li>Ajax & Fetch</li>
-            <li>JS Frameworks</li>
+            <li>APIs</li>
             <li>React JS</li>
+            <li>NPM</li>
             <li>Vite</li>
-            <li>Firebase</li>
             <li>Material UI</li>
             <li>Integración de Mercado Pago</li>
+            <li>Firebase</li>
+            <li>Node js</li>
+            <li>Express</li>
+            <li>MongoDB</li>
+            <li>Passport</li>
+            <li>JWT</li>
+            <li>Mongoose</li>
+            <li>Websockets</li>
+            <li>Twilio & OWASP</li>
         </ul>
     </fieldset>`;
   contenedorEstudios.append(estudios);
 
-  // const estudiando = document.createElement("div");
-  // estudiando.classList.add("estudiando");
-  // estudiando.innerHTML = `
-  //   <fieldset class="fieldset-est">
-  //       <legend class="legend-est">Estudiando:</legend>
-  //       <ul class="lista-estudios">
-  //           <li>React avanzado</li>
-  //       </ul>
-  //   </fieldset>`;
-  // contenedorEstudios.append(estudiando);
-
-  const aEstudiar = document.createElement("div");
-  aEstudiar.classList.add("aestudiar");
-  aEstudiar.innerHTML = `
-                <fieldset class="fieldset-aest">
-                    <legend class="legend-aest">A estudiar:</legend>
-                        <ul class="lista-aestudios">
-                            <li>Python</li>
-                            <li>NPM</li>
-                            <li>Websockets</li>
-                            <li>SQL</li>
-                            <li>MongoDB</li>
-                            <li>Mongoose</li>
-                            <li>Twilio & OWASP</li>
-                            <li>GraphQL</li>
-                        </ul>
-                </fieldset>`;
-  contenedorEstudios.append(aEstudiar);
 
   botonContinuar.removeEventListener("click", mostrarMasInfo);
 
@@ -98,11 +77,13 @@ function cancelar() {
   const gracias = document.createElement("div");
   gracias.classList.add("aestudiar");
   gracias.innerHTML = `
-                <fieldset class="fieldset-aest">
-                        <ul class="lista-aestudios">
-                            <span>Muchas gracias por pasar!</span>
-                        </ul>
-                </fieldset>
+                <div class="gracias">
+                  <fieldset class="field-gracias">
+                    <ul>
+                      <span>Muchas gracias por pasar!</span>
+                    </ul>
+                  </fieldset>
+                </div>
     `;
   contenedorEstudios.append(gracias);
 
